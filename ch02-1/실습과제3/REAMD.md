@@ -20,8 +20,8 @@ std::cout << "100% \\취업율\\" << std::endl;
 - std::cout은 화면에 텍스트를 출력하며, std::endl은 줄바꿈을 의미
 - `\`는 이스케이프 문자로 특별한 의미를 가진 문자를 출력하기 위해 사용함, 대표적인 이스케이프 시퀀스로는 `\"` , `\\` , `\n` , `\t` 등이 있다.
 
-## 실행결과
-
 <br>
+
+## 실행결과
 
 <img width="777" height="135" alt="스크린샷 2026-03-12 000856" src="https://github.com/user-attachments/assets/1c407680-fb47-4deb-80d5-5872e5c3cb45" />
