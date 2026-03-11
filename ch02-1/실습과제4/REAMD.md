@@ -42,4 +42,11 @@ std::cout << std::endl;
 ```
 return 0;
 ```
-- 
+- 프로그램 종료를 알리는 반환값
+
+<br>
+
+## 실행결과
+
+<img width="779" height="186" alt="스크린샷 2026-03-12 003956" src="https://github.com/user-attachments/assets/bc25b0cb-ce73-4e8f-b313-1d2dff04c3a9" />
+
