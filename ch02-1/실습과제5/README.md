@@ -25,7 +25,19 @@ for (int i = 0; i < 4; i++)
 ```
 cout << endl;
 ```
-- 
+- 한 행이 끝나면 줄바꿈
+
+```
+return 0;
+```
+- 프로그램 종료를 알리는 반환값
+
+<br>
+
+## 실행결과
+
+
+<img width="778" height="148" alt="스크린샷 2026-03-12 005840" src="https://github.com/user-attachments/assets/fcf15891-3073-4f4d-8f29-39b1f280e163" />
 
 
 
