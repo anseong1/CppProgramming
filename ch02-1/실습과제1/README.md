@@ -17,7 +17,6 @@
 ## 2. 객체 cin, cout은 어디에 선언되어 있는가?
 
 표준입출력 객체로 `<iosream>` 이라는 헤더파일에 `std` namespace 안에 선언 되어 있다.
-<img width="520" height="228" alt="스크린샷 2026-03-11 230638" src="https://github.com/user-attachments/assets/87a698e2-37e9-4b98-ab8c-b05404e23061" />
 
 
 ---
