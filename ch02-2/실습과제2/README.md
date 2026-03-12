@@ -40,13 +40,15 @@ int y = x*x + 2*x - 5;
 ```
 cout << "x=" << x << "일 때 y의 값은 " << y << "입니다." << endl;
 ```
-- x의 값과 계산된 y의 값을 화면에 출력하고 `endl` 은 줄바꿈 의미
+- `cout`으로 x의 값과 계산된 y의 값을 화면에 출력하고 `endl`은 줄바꿈 의미
 
 ```
 return 0;
 ```
-- 
+- 프로그램 종료를 알리는 반환값
 
 <br>
+
+## 실행결과
 
 <img width="1604" height="222" alt="스크린샷 2026-03-12 101916" src="https://github.com/user-attachments/assets/13015b6e-9538-4282-b6c5-7b6a04034032" />
