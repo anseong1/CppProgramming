@@ -33,7 +33,7 @@ int Rectangle::getPerimeter() {
 
 void Rectangle::getBottomRight() {
     int bottomX = x + width;
-    int bottomY = y + height;
+    int bottomY = y - height;
     cout << "사각형의 우측하단의 좌표는 (" << bottomX << ", " << bottomY << ")" << endl;
 }
 
