@@ -117,7 +117,7 @@ cout << "사각형의 둘레길이는 " << rect.getPerimeter() << endl;
 ```
 rect.getBottomRight();
 ```
-- 우측 하단 좌표를 계산하여 출력하는 함수를 호출
+- 우측 하단 좌표를 계산하여 출력
 
 ```
 return 0;
