@@ -15,7 +15,7 @@
 
 ## 3. sizeof(클래스명)의 결과값을 출력해보고 결과를 설명하라.
 `sizeof`는 객체나 자료형의 메모리 크기를 바이트 단위로 구하는 연산자이다.
-실습문제2를 예시로 들어 맨 아래의 사진과 같이 `sizeof` 연산자를 넣어서 코드를 짜면
+실습문제2를 예시로 들어 맨 아래의 사진과 같이 `sizeof` 연산자를 넣어서 코드를 짜보면
 ```
 삼각형의 면적은 25
 height의 크기: 4 byte
@@ -23,7 +23,7 @@ width의 크기: 4 byte
 Triangle 객체 크기: 8 byte
 ```
 위와 같이 결과값이 나오게 된다. 
-sizeof(t.height)는 변수 크기 / sizeof(Triangle)는 객체 전체 크기 의미한다.
+`sizeof(t.height)`는 변수 크기 / `sizeof(Triangle)`는 객체 전체 크기 의미한다.
 여기서 `getArea()`, `sizeof` 같은 멤버 함수는 객체 메모리에 포함되지 않는다.
 
 <img width="864" height="720" alt="스크린샷 2026-03-17 142035" src="https://github.com/user-attachments/assets/096b0485-6219-4232-954b-4ae6fe74dd65" />
