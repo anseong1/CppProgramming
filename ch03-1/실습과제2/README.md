@@ -80,6 +80,7 @@ return 0;
 
 ## 실행결과
 
+<img width="1683" height="225" alt="스크린샷 2026-03-16 203740" src="https://github.com/user-attachments/assets/01f5f8ee-d325-405e-ac2e-a210a13e6663" />
 
 
 
