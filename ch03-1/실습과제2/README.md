@@ -5,7 +5,7 @@
 ```
 #include <iostream>
 ```
-- 입출력 위한 헤더파일이며 cout,endl,cin 등을 사용하기 위함
+- 입출력 위한 헤더파일이며 cout,endl,cin 등을 사용하기 위해 선언
 
 ```
 using namespace std;
