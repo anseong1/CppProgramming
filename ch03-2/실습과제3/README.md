@@ -20,7 +20,7 @@ class Sphere {
 ```
 private:
 ```
-- 클래스 내부를 비공개
+- 외부에서 접근하지 못하도록 캡슐화
 
 ```
 double radius;
@@ -40,6 +40,36 @@ Sphere(double r) : radius(r) {}
 ```
 Sphere() : Sphere(1.0) {}
 ```
-- 본값 1.0으로 초기화하는 위임 생성자 정의
+- 기본값 1.0으로 초기화하는 위임 생성자 정의
+
+```
+double getVolume() {
+```
+- 구의 부피 반환 함수 및 정의 시작
+
+```
+return (4.0 / 3.0) * 3.14 * radius * radius * radius;
+```
+- 구의 부피 공식 계산을 후 반환
+
+```
+};
+```
+- 클래스 종료
+
+```
+int main() {
+```
+- 메인함수 시작점
+
+```
+Sphere sph1;
+```
+- 기본 생성자를 이용해 반지름을 1로 초기화
+
+```
+ cout << "구의 부피는 " << sph1.getVolume() << endl;
+```
+- 
 
 
