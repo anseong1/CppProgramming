@@ -70,6 +70,29 @@ Sphere sph1;
 ```
  cout << "구의 부피는 " << sph1.getVolume() << endl;
 ```
-- 
+- `sph1`의 값을 계산하고 출력 후 줄바꿈
+
+```
+Sphere sph2(3.0);
+```
+- 매개변수 생성자를 이용해 반지름을 3으로 초기화
+
+```
+cout << "구의 부피는 " << sph2.getVolume() << endl;
+```
+- `sph2(3.0)`의 값을 계산하고 출력 후 줄바꿈
+
+```
+return 0;
+```
+- 0을 반환하고 프로그램 종료
+
+<br>
+
+## 실행결과
+
+<img width="1720" height="306" alt="스크린샷 2026-03-19 122037" src="https://github.com/user-attachments/assets/db8714db-e7ce-4e8b-9d97-6073571eaf2d" />
+
+
 
 
