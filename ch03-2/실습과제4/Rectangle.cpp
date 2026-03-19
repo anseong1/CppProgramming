@@ -1,4 +1,4 @@
-// Title: Sphere
+// Title: Rectangle
 // Date: 2026.03.19
 // Author: 안성일
 
