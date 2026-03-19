@@ -65,7 +65,7 @@ Triangle tri1;
 ```
 cout << "삼각형의 면적은 " << tri1.getArea() << endl;
 ```
-- `ri1.getArea(): tri1` 객체에 저장된 값을 출력 후 줄바꿈
+- `tri1`의 저장된 값을 출력 후 줄바꿈
 
 ```
 Triangle tri2(2, 4);
@@ -75,7 +75,7 @@ Triangle tri2(2, 4);
 ```
 cout << "삼각형의 면적은 " << tri2.getArea() << endl;
 ```
-- `tri2.getArea(): tri(2, 4)` 객체에 저장된 값을 출력 후 줄바꿈
+- `tri2(2, 4)`의 계산된 값을 출력 후 줄바꿈
 
 ```
 return 0;
