@@ -5,7 +5,7 @@
 ```
 #include <iostream>
 ```
-입출력 스트림 사용을 위한 헤더파일 포함
+- 입출력 스트림 사용을 위한 헤더파일 포함
 
 ```
 using namespace std;
