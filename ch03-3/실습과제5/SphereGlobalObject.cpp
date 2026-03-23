@@ -1,4 +1,4 @@
-// Title: SphereGlovalObject.cpp
+// Title: SphereGlovalObject
 // Date: 2026.03.24
 // Author: 안성일
 
