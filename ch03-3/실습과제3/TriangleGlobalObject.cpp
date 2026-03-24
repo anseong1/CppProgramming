@@ -37,10 +37,10 @@ Triangle tri1(4, 8);  // 전역 객체 tri1 생성 → width=4, height=8
 Triangle tri2(2, 2);  // 전역 객체 tri2 생성 → width=2, height=2 
 
 int main() {
-    double area1 = tri2.getArea();  // tri2 넓이 계산 (2*2/2 = 2)
+    double area1 = tri2.getArea();  // tri2 넓이 계산 
     cout << "삼각형의 면적은 " << area1 << endl;  // 2 출력
 
-    double area2 = tri1.getArea();  // tri1 넓이 계산 (4*8/2 = 16)
+    double area2 = tri1.getArea();  // tri1 넓이 계산 
     cout << "삼각형의 면적은 " << area2 << endl;  // 16 출력
 
     return 0;  // main 종료 후 전역 객체 소멸 - 생성 역순으로 tri2 → tri1 소멸
