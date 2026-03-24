@@ -3,7 +3,7 @@
 // Author: 안성일
 
 #include <iostream>      // 입출력 스트림 헤더 파일 포함
-using namespace std;     // std 네임스페이스 사용
+using namespace std;     // std 네임스페이스 사용 (cout, endl 등을 std:: 없이 사용 가능)
 
 class Triangle {         // Triangle 클래스 정의 시작
     double width, height;  // 밑변(width), 높이(height)
