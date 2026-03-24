@@ -3,7 +3,8 @@
 // Author: 안성일
 
 #include <iostream>      // 입출력 스트림 헤더 파일 포함
-using namespace std;     // std 네임스페이스 사용
+using namespace std;     // std 네임스페이스 사용 (cout, endl 등을 std:: 없이 사용 가능)
+
 
 class Sphere {           // Sphere 클래스 정의 시작
     double radius;       // 반지름(radius)
@@ -33,8 +34,8 @@ double Sphere::getVolume() {
 }
 
 // 전역 객체 선언 - main() 실행 전에 생성됨
-Sphere sph1(10);  // 전역 객체 sph1 생성 → radius=10 (프로그램 시작 시 먼저 생성)
-Sphere sph2(20);  // 전역 객체 sph2 생성 → radius=20 (sph1 다음에 생성)
+Sphere sph1(10);  // 전역 객체 sph1 생성 → radius=10 
+Sphere sph2(20);  // 전역 객체 sph2 생성 → radius=20 
 
 int main() {
     cout << "구의 부피는" << sph1.getVolume() << endl;  // sph1 부피 출력
