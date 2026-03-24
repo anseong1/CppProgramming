@@ -36,11 +36,11 @@ double Triangle::getArea() {
 
 int main() {
     Triangle tri1;  // 기본 생성자 호출 → Triangle(1, 1) 위임 → width=1, height=1
-    double area1 = tri1.getArea();  // tri1의 넓이 계산 (1*1/2 = 0.5)
+    double area1 = tri1.getArea();  // tri1의 넓이 계산 
     cout << "삼각형의 면적은 " << area1 << endl;  // 면적 출력
 
     Triangle tri2(2, 4);  // 매개변수 생성자 호출 → width=2, height=4
-    double area2 = tri2.getArea();  // tri2의 넓이 계산 (2*4/2 = 4)
+    double area2 = tri2.getArea();  // tri2의 넓이 계산
     cout << "삼각형의 면적은 " << area2 << endl;  // 면적 출력
 
     return 0;  // main 함수 종료, 이후 tri2 → tri1 순서로 소멸자 자동 호출
