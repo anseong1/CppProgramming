@@ -2,10 +2,10 @@
 // Date: 2026.03.26
 // Author: 안성일
 
-#include <iostream>
-using namespace std;
+#include <iostream>   // 입출력 스트림 헤더파일 포함
+using namespace std;  // std 네임스페이스 사용(cout, endl 등을 std:: 없이 사용 가능)
 
-class Circle {
+class Circle {           // Circle 클래스 정의 시작
 private:
     int radius;          // 외부에서 직접 접근 불가한 멤버변수 (정보은닉)
 public:
