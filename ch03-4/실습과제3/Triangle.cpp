@@ -6,9 +6,9 @@
 using namespace std;  // std 네임스페이스 사용(cout, endl 등을 std:: 없이 사용 가능)
 
 class Triangle {      // Triangle 클래스 정의 시작
-private:
-    int width;       // 삼각형의 폭 (외부 직접 접근 불가)
-    int height;      // 삼각형의 높이 (외부 직접 접근 불가)
+private:              // 외부에서 접근 불가능한 private 영역
+    int width;       // 삼각형의 폭 
+    int height;      // 삼각형의 높이
 public:
     Triangle();                // 생성자 선언
     void setWidth(int w);      // 폭 setter 선언
