@@ -16,7 +16,7 @@
 
 ## 2. 객체 cin, cout은 어디에 선언되어 있는가?
 
-표준입출력 객체로 `<iosream>` 이라는 헤더파일에 `std` namespace 안에 선언 되어 있다.
+표준입출력 객체로 `<iostream>` 이라는 헤더파일에 `std` namespace 안에 선언 되어 있다.
 
 
 ---
