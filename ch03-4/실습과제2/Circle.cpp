@@ -6,9 +6,9 @@
 using namespace std;  // std 네임스페이스 사용(cout, endl 등을 std:: 없이 사용 가능)
 
 class Circle {           // Circle 클래스 정의 시작
-private:
-    int radius;          // 외부에서 직접 접근 불가한 멤버변수 (정보은닉)
-public:
+private:                 // 외부에서 접근 불가능한 Private 영역
+    int radius;          // 멤버변수 생성
+public:                  // 외부에서 접근 가능한 public 영역
     Circle();            // 생성자 선언
     void setRadius(int r);   // radius 값을 설정하는 setter 선언
     int getRadius();         // radius 값을 반환하는 getter 선언
