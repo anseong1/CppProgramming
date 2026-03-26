@@ -22,5 +22,5 @@ int main() {
     Circle moon;            // Circle 객체 생성, 생성자 자동 호출 → radius = 1
     moon.setRadius(5);      // setter를 통해 radius를 5로 변경 
     cout << "원의 반지름은 " << moon.getRadius() << endl;  // getter를 통해 radius 값 출력
-    return 0;
+    return 0;          // 0을 반환하고 프로그램 종료
 }
