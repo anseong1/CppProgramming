@@ -55,15 +55,15 @@ void setHeight(int h);
 - 너비, 높이 설정 함수 선언
 
 ```
-int getWidth();         // 너비 반환 함수 선언
-int getHeight();        // 높이 반환 함수 선언
-double getArea();       // 넓이 반환 함수 선언
+int getWidth();         
+int getHeight();        
+double getArea();       
 ```
 - 너비, 높이, 넓이 반환 함수 선언
 
 ```
 inline Triangle::Triangle(int w, int h) : width(w), height(h) {
-    cout << "폭" << w << " 높이" << h << "인 삼각형 생성" << endl;}
+    cout << "폭," << w << " 높이" << h << "인 삼각형 생성" << endl;}
 ```
 -  w→width, h→height 초기화 후 메시지 출력(매개변수 생성자)
 
@@ -74,7 +74,7 @@ inline Triangle::Triangle() : Triangle(1, 1) {}
 
 ```
 inline Triangle::~Triangle() {
-    cout << "폭" << width << " 높이" << height << "인 삼각형 소멸" << endl;}
+    cout << "폭," << width << " 높이" << height << "인 삼각형 소멸" << endl;}
 ```
 - 객체가 메모리에서 해제될 때 자동 호출되어 메시지 출력(소멸자)
 
@@ -110,10 +110,10 @@ Triangle tri;
 tri.setWidth(3);       
 tri.setHeight(5);      
 ```
-- 너비를 3, 높이를 5로 변경
+- setter를 통해 너비를 3, 높이를 5로 변경
 
 ```
-cout << "삼각형의 면적은" << tri.getArea() << endl;
+cout << "삼각형의 면적은 " << tri.getArea() << endl;
 ```
 - getter를 통해 삼각형의 면적 출력
 
@@ -126,4 +126,5 @@ return 0;
 
 ## 실행결과
 
-<img width="1720" height="291" alt="스크린샷 2026-03-30 200256" src="https://github.com/user-attachments/assets/88504301-6d4a-45d1-b373-c47cf50f800b" />
+<img width="1719" height="285" alt="스크린샷 2026-03-30 223142" src="https://github.com/user-attachments/assets/dec01dfd-3974-4136-8fbd-7e5c7e69ceb3" />
+
