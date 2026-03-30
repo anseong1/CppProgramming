@@ -2,39 +2,58 @@
 // Date: 2026.03.30
 // Author: 안성일
 
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 class Triangle {
-private:
-    double width;
-    double height;
+private: 
+	int width, height;
 
 public:
-    
-    Triangle() : width(1), height(1) {
-        cout << "폭" << width << ",높이" << height << "인 삼각형 생성" << endl;
-    }
+	Triangle(int w, int h);
+	Triangle();
+	~Triangle();
 
-    ~Triangle() {
-        cout << "폭" << width << ",높이" << height << "인 삼각형 소멸" << endl;
-    }
+	void setWidth(int w);
+	void setHeight(int h);
 
-    void setWidth(double w) { width = w; }
-    void setHeight(double h) { height = h; }
+	int getWidth();
+	int getHeight();
 
-
-    double getWidth() { return width; }
-    double getHeight() { return height; }
-
-    double getArea() { return width * height / 2; }
+	double getArea();
 };
 
+inline Triangle::Triangle(int w, int h) : width(w), height(h) {
+	cout << "폭" << w << " 높이" << h << "인 삼각형 생성" << endl;
+}
 
-int main() {
-    Triangle tri;
-    tri.setWidth(3);
-    tri.setHeight(5);
-    cout << "삼각형의 면적은 " << tri.getArea() << endl;
-    return 0;
+inline Triangle::Triangle() : Triangle(1, 1) {}
+
+inline Triangle::~Triangle() {
+	cout << "폭" << width << " 높이" << height << "인 삼각형 소멸" << endl;
+}
+
+inline void Triangle::setWidth(int w) {width = w;}
+
+inline void Triangle::setHeight(int h) {height = h;}
+
+inline int Triangle::getWidth() {
+    return width;
+}
+
+inline int Triangle::getHeight() {
+	return height;
+}
+
+inline double Triangle::getArea() {
+	return width * height * 2;
+}
+
+int main(void) {
+	Triangle tri;
+	tri.setWidth(3);
+	tri.setHeight(5);
+    cout << "삼각형의 면적은" << tri.getArea() << endl;
+
+	return 0;
 }
