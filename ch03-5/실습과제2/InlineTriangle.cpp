@@ -46,7 +46,7 @@ inline int Triangle::getHeight() {
 }
 
 inline double Triangle::getArea() {
-	return width * height * 2;
+	return width * height * 2.0;
 }
 
 int main(void) {
