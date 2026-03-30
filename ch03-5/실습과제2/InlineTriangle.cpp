@@ -24,13 +24,13 @@ public:
 };
 
 inline Triangle::Triangle(int w, int h) : width(w), height(h) {
-	cout << "폭" << w << " 높이" << h << "인 삼각형 생성" << endl;
+	cout << "폭," << w << "높이" << h << "인 삼각형 생성" << endl;
 }
 
 inline Triangle::Triangle() : Triangle(1, 1) {}
 
 inline Triangle::~Triangle() {
-	cout << "폭" << width << " 높이" << height << "인 삼각형 소멸" << endl;
+	cout << "폭," << width << "높이" << height << "인 삼각형 소멸" << endl;
 }
 
 inline void Triangle::setWidth(int w) {width = w;}
@@ -53,7 +53,7 @@ int main(void) {
 	Triangle tri;
 	tri.setWidth(3);
 	tri.setHeight(5);
-    cout << "삼각형의 면적은" << tri.getArea() << endl;
+    cout << "삼각형의 면적은 " << tri.getArea() << endl;
 
 	return 0;
 }
