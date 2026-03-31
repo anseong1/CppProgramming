@@ -59,8 +59,6 @@ const char* getPlace();
 ```
 - 가로 크기, 세로 크기, 촬영 장소 반환 함수 선언
 
----
-
 ```
 Picture::Picture() {
 ```
@@ -105,8 +103,6 @@ i++;
 place[i] = '\0';
 ```
 - 문자열 끝에 널문자 추가
-
----
 
 ```
 Picture::Picture(int w, int h, const char* p) {
@@ -162,8 +158,6 @@ int Picture::getHeight() { return height; }
 const char* Picture::getPlace() { return place; }
 ```
 - place 배열의 주소 반환
-
----
 
 ```
 Picture pic;
