@@ -25,11 +25,13 @@ Picture::Picture() {
     width = 5;
     height = 7;
 
-    place[0] = 'N';
-    place[1] = 'o';
-    place[2] = 'n';
-    place[3] = 'e';
-    place[4] = '\0';  
+    const char* temp = "모름";
+    int i = 0;
+    while (temp[i] != '\0') {
+        place[i] = temp[i];
+        i++;
+    }
+    place[i] = '\0';
 }
 
 
@@ -45,6 +47,7 @@ Picture::Picture(int w, int h, const char* p) {
     place[i] = '\0';  
 }
 
+
 int Picture::getWidth() {
     return width;
 }
@@ -57,9 +60,10 @@ const char* Picture::getPlace() {
     return place;
 }
 
+
 int main() {
     Picture pic;
-    Picture mt(10, 14, "Halla");
+    Picture mt(10, 14, "한라산");
 
     cout << pic.getWidth() << "x" << pic.getHeight() << " " << pic.getPlace() << endl;
     cout << mt.getWidth() << "x" << mt.getHeight() << " " << mt.getPlace() << endl;
