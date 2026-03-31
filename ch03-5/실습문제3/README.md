@@ -392,6 +392,166 @@ return 0;
 
 ## 소스코드설명(Storage)
 
+```
+#include <iostream>
+```
+- 입출력 스트림 헤더파일 포함
+
+```
+using namespace std;
+```
+- std 네임스페이스 사용(cout, endl 등을 std:: 없이 사용 가능)
+
+```
+class Storage {
+```
+- Storage 클래스 정의 시작
+
+```
+private:
+```
+- 외부에서 접근 불가능한 Private 영역
+
+```
+double data[10];
+```
+- 체온 값을 저장하는 배열 (최대 10개)
+
+```
+int count;
+```
+- 현재 저장된 체온 개수
+
+```
+public:
+```
+- 외부에서 접근 가능한 Public 영역
+
+```
+Storage();
+```
+- 기본 생성자 선언
+
+```
+void put(double temp);
+```
+- 체온 저장 함수 선언
+
+```
+void dump();
+```
+- 저장된 모든 체온 출력 함수 선언
+
+```
+double getAvg();
+```
+- 평균 체온 반환 함수 선언
+
+```
+Storage::Storage() {
+```
+- 기본 생성자 구현 시작
+
+```
+count = 0;
+```
+- 저장된 개수 0으로 초기화
+
+```
+for (int i = 0; i < 10; i++)
+    data[i] = 0;
+```
+- 배열의 모든 값을 0으로 초기화
+
+```
+void Storage::put(double temp) {
+```
+- 체온 저장 함수 구현
+
+```
+if (count < 10) {
+```
+- 저장 공간이 남아있으면
+
+```
+data[count] = temp;
+```
+- 현재 count 위치에 체온 값 저장
+
+```
+count++;
+```
+- 저장 개수 1 증가
+
+```
+} else {
+    cout << "저장 공간이 가득 찼습니다." << endl;
+}
+```
+- 저장 공간이 가득 찼을 때 경고 출력
+
+```
+void Storage::dump() {
+```
+- 모든 체온 출력 함수 구현
+
+```
+for (int i = 0; i < count; i++)
+    cout << data[i] << endl;
+```
+- 저장된 체온을 한 줄씩 출력
+
+```
+double Storage::getAvg() {
+```
+- 평균 체온 반환 함수 구현
+
+```
+double sum = 0;
+```
+- 합계 변수 0으로 초기화
+
+```
+for (int i = 0; i < count; i++)
+    sum += data[i];
+```
+- 저장된 모든 체온 값을 합산
+
+```
+return sum / count;
+```
+- 합계를 개수로 나눠 평균 반환
+
+```
+Storage a;
+```
+- 기본 생성자 호출 → count=0, data 배열 전부 0으로 초기화
+
+```
+a.put(36.7);
+a.put(36.9);
+a.put(36.4);
+```
+- 체온 36.7, 36.9, 36.4 순서대로 저장
+
+```
+a.dump();
+```
+- 저장된 모든 체온 출력
+
+```
+cout << "평균 체온은 " << a.getAvg() << "입니다." << endl;
+```
+- 평균 체온 계산 후 출력
+
+```
+return 0;
+```
+- 0을 반환하고 프로그램 종료
+
+## 실행결과
+
+<img width="1723" height="325" alt="스크린샷 2026-03-31 214517" src="https://github.com/user-attachments/assets/4879b0b8-039f-4d7d-a0d2-482c5470f856" />
 
 
 
