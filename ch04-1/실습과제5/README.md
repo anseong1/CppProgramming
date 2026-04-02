@@ -83,10 +83,10 @@ int size[3] = {2, 4, 6};
 ```
 for (int i = 0; i < 3; i++) {
     (ptr + i)->width = size[i];
-    (ptr + i)->height = size[i];
+    (ptr + i)->height = 2;
 }
 ```
-- 반복문으로 포인터를 이용해 각 객체의 밑변과 높이를 2, 4, 6으로 설정
+- 반복문으로 포인터를 이용해 각 객체의 밑변을 size[i](2, 4, 6)로 설정하고 높이를 2로 고정 대입
 
 ```
 for (int i = 0; i < 3; i++) {
@@ -104,6 +104,5 @@ return 0;
 
 ## 실행결과
 
-<img width="1718" height="265" alt="스크린샷 2026-04-02 221732" src="https://github.com/user-attachments/assets/4a0eb2f5-3f23-4252-84a9-dbe6229d41ac" />
-
+<img width="1709" height="280" alt="스크린샷 2026-04-02 225413" src="https://github.com/user-attachments/assets/068f565f-349c-4371-bfe6-c27c65e8ab23" />
 
