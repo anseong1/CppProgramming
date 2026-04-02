@@ -40,7 +40,7 @@ int main() {
 
     for (int i = 0; i < 3; i++) {
         (ptr + i)->width = size[i];
-        (ptr + i)->height = size[i];
+        (ptr + i)->height = 2;
     }
 
     for (int i = 0; i < 3; i++) {
