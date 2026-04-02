@@ -1,4 +1,4 @@
-// Title: PointerTriangle
+// Title: ObjectPointerTriangle
 // Date: 2026.04.02
 // Author: 안성일
 
