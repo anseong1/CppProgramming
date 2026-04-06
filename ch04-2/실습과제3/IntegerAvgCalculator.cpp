@@ -1,4 +1,4 @@
-// Title: 
+// Title: IntegerAvgCalculator
 // Date: 2026.04.06
 // Author: 안성일
 
