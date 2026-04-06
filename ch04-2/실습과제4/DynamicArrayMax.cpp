@@ -1,6 +1,6 @@
 // Title: DynamicArrayMax
 // Date: 2026.04.06
-// Athour: 안성일
+// Author: 안성일
 
 #include <iostream>
 using namespace std;
