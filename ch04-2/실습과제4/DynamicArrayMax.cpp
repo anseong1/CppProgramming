@@ -12,13 +12,13 @@ int main() {
     cin >> n;
     cout << n << "개의 실수를 입력하시오." << endl;
 
-    double* p = new double[n];  
+    double* p = new double[n];
 
     for (int i = 0; i < n; i++) {
         cin >> p[i];
     }
 
-    double max = p[0];  
+    double max = p[0];
 
     for (int i = 1; i < n; i++) {
         if (p[i] > max) {
@@ -26,6 +26,8 @@ int main() {
         }
     }
 
+    cout.setf(ios::fixed);
+    cout.precision(2);
     cout << "최대값은 " << max << "입니다." << endl;
 
     delete[] p;
