@@ -1,3 +1,7 @@
+// Title: DynamicStringInput
+// Date: 2026.04.06
+// Author: 안성일
+
 #include <iostream>
 using namespace std;
 
