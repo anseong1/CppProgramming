@@ -1,4 +1,4 @@
-﻿// Title : NewDeleteShere
+﻿// Title : NewDeleteSphere
 // Date : 2026.04.08
 // Author : 안성일
 
@@ -48,5 +48,5 @@ int main(void) {
 	for (int i = 0; i < n; i++) cout << "구" << i << "의 크기 : " << arr[i].getVolume() << endl;
 
 	delete[] arr;
-  return 0;
+    return 0;
 }
