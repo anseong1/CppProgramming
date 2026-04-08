@@ -1,6 +1,6 @@
 ﻿// Title : NewDeleteTriangle
 // Date : 2026.04.08
-// Author : 안성일
+// Author : 안성일  
 
 #include <iostream>
 using namespace std;
