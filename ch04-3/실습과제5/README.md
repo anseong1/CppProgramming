@@ -94,7 +94,7 @@ cout << arr[i].getVolume() << endl;
 ```
 delete[] arr;
 ```
-- 동적 할당한 배열 메모리 해제하여 메모리 누수 방지
+- 동적 할당한 배열 메모리 해제
 
 ```
 return 0;
