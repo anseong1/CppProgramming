@@ -46,13 +46,13 @@ while (true) {
 cout << "문자열 입력 : ";
 getline(cin, input, '\n');
 ```
-- 입력 요청 후 엔터키('\n')를 구분문자로 한 줄 전체를 input에 저장
+- 문자열을 입력받고 엔터키를 구분문자로 한 줄 전체를 input에 저장
 
 ```
 if (input == "quit")
     break;
 ```
-- 입력값이 "quit"이면 반복문 종료, ==는 string 클래스의 비교 연산자
+- 입력값이 "quit"이면 반복문 종료
 
 ```
 count++;
@@ -62,7 +62,7 @@ count++;
 ```
 result = result + "<" + to_string(count) + ">" + input;
 ```
-- 기존 result에 <번호>입력값 형태로 이어붙임, to_string()으로 정수를 문자열로 변환 후 + 연산자로 연결
+- 기존 result에 <번호>입력값 형태로 이어붙이고 to_string()으로 정수를 문자열로 변환 후 + 연산자로 연결
 
 ```
 cout << "이어진 문자열: " << result << endl;
