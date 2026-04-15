@@ -189,13 +189,6 @@ return 0;
 ## 5번 문제 소스코드설명
 
 ```
-// Title: no.5Practice
-// Date: 2026.04.15
-// Author: 안성일
-```
-- 프로그램 제목, 날짜, 작성자 주석
-
-```
 #include <iostream>
 ```
 - 헤더 파일 포함, 입출력 사용
@@ -403,5 +396,286 @@ return 0;
 ---
 
 ## 11번 문제 소스코드설명
+
+```
+#include <iostream>
+```
+- 헤더 파일 포함, 입출력 사용
+
+```
+using namespace std;
+```
+- std 네임스페이스 사용 (cout, endl 등을 std:: 없이 사용 가능)
+
+```
+class Container {
+```
+- Container 클래스 정의 시작
+
+```
+int size;
+```
+- 현재 저장량을 나타내는 정수형 변수 선언
+
+```
+public:
+```
+- 멤버들을 외부에서 접근 가능하도록 public 선언
+
+```
+Container() { size = 10; }
+```
+- 생성자, size를 10으로 초기화
+
+```
+void fill(int n) {
+```
+- n만큼 채우는 함수 정의 시작
+
+```
+size += n;
+```
+- size에 n을 더함
+
+```
+if (size > 10) size = 10;
+```
+- size가 10을 초과하면 10으로 고정
+
+```
+bool consume(int n) {
+```
+- n만큼 소모하는 함수 정의 시작
+
+```
+if (size < n) return false;
+```
+- 잔량이 n보다 적으면 false 반환
+
+```
+size -= n;
+```
+- size에서 n을 뺌
+
+```
+return true;
+```
+- 소모하면 true 반환
+
+```
+int getSize() { return size; }
+```
+- 현재 size 값을 반환하는 함수
+
+```
+class CoffeeVendingMachine {
+```
+- CoffeeVendingMachine 클래스 정의 시작
+
+```
+Container tong[3];
+```
+- Container 객체 배열 선언 
+
+```
+void fill() {
+```
+- 3개의 통을 모두 채우는 함수 정의 시작
+
+```
+tong[0].fill(10);
+tong[1].fill(10);
+tong[2].fill(10);
+```
+- 커피, 물, 설탕 통을 모두 10으로 채움
+
+```
+void getEspresso() {
+```
+- 에스프레소 제조 함수 정의 시작
+
+```
+if (tong[0].getSize() < 1 || tong[1].getSize() < 1) {
+```
+- 커피 또는 물이 부족한지 확인
+
+```
+cout << "원료가 부족합니다." << endl;
+return;
+```
+- 부족하면 메시지 출력 후 함수 종료
+
+```
+tong[0].consume(1);
+tong[1].consume(1);
+```
+- 커피 1, 물 1 소모
+
+```
+cout << "에스프레소 드세요" << endl;
+```
+- 에스프레소 제조 완료 메시지 출력
+
+```
+void getAmericano() {
+```
+- 아메리카노 제조 함수 정의 시작
+
+```
+if (tong[0].getSize() < 1 || tong[1].getSize() < 2) {
+```
+- 커피 또는 물이 부족한지 확인
+
+```
+tong[0].consume(1);
+tong[1].consume(2);
+```
+- 커피 1, 물 2 소모
+
+```
+cout << "아메리카노 드세요" << endl;
+```
+- 아메리카노 제조 완료 메시지 출력
+
+```
+void getSugarCoffee() {
+```
+- 설탕커피 제조 함수 정의 시작
+
+```
+if (tong[0].getSize() < 1 || tong[1].getSize() < 2 || tong[2].getSize() < 1) {
+```
+- 커피, 물, 설탕이 부족한지 확인
+
+```
+tong[0].consume(1);
+tong[1].consume(2);
+tong[2].consume(1);
+```
+- 커피 1, 물 2, 설탕 1 소모
+
+```
+cout << "설탕커피 드세요" << endl;
+```
+- 설탕커피 제조 완료 메시지 출력
+
+```
+void show() {
+```
+- 잔량 출력 함수 정의 시작
+
+```
+cout << "커피 " << tong[0].getSize()
+    << ", 물 " << tong[1].getSize()
+    << ", 설탕 " << tong[2].getSize() << endl;
+```
+- 커피, 물, 설탕의 현재 잔량 출력
+
+```
+public:
+```
+- 멤버들을 외부에서 접근 가능하도록 public 선언
+
+```
+void run() {
+```
+- 자판기 작동 함수 정의 시작
+
+```
+cout << "***** 커피자판기를 작동합니다. *****" << endl;
+```
+- 자판기 시작 메시지 출력
+
+```
+tong[0].fill(10);
+tong[1].fill(10);
+tong[2].fill(10);
+```
+- 커피, 물, 설탕 통을 모두 10으로 초기화
+
+```
+while (true) {
+```
+- 프로그램이 종료될 때까지 무한 반복
+
+```
+int choice;
+```
+- 메뉴 선택값을 저장할 정수형 변수 선언
+
+```
+cout << "메뉴를 눌러주세요(1:에스프레소, 2:아메리카노, 3:설탕커피, 4:잔량보기, 5:채우기)>>";
+```
+- 메뉴 선택을 안내하는 문자열 출력
+
+```
+cin >> choice;
+```
+- 사용자로부터 메뉴 번호 입력받아 choice에 저장
+
+```
+switch (choice) {
+```
+- choice 값에 따라 switch문 시작
+
+```
+case 1: getEspresso(); break;
+```
+- 1 입력 시 에스프레소 제조 함수 호출
+
+```
+case 2: getAmericano(); break;
+```
+- 2 입력 시 아메리카노 제조 함수 호출
+
+```
+case 3: getSugarCoffee(); break;
+```
+- 3 입력 시 설탕커피 제조 함수 호출
+
+```
+case 4: show(); break;
+```
+- 4 입력 시 잔량 출력 함수 호출
+
+```
+case 5:
+    fill();
+    show();
+    break;
+```
+- 5 입력 시 통을 채우고 잔량 출력
+
+```
+default:
+    cout << "잘못된 입력입니다." << endl;
+```
+- 1~5 외의 값 입력 시 오류 메시지 출력
+
+```
+int main() {
+```
+- 메인함수 정의 시작
+
+```
+CoffeeVendingMachine machine;
+```
+- CoffeeVendingMachine 객체 machine 생성
+
+```
+machine.run();
+```
+- 자판기 작동 함수 호출
+
+```
+return 0;
+```
+- 0을 반환하고 프로그램 종료
+
+<br>
+
+## 실행결과
+
+<img width="1710" height="476" alt="스크린샷 2026-04-15 194639" src="https://github.com/user-attachments/assets/cae41bd1-815c-4407-8ca6-f483a486be50" />
 
 
