@@ -184,4 +184,224 @@ return 0;
 
 <img width="1723" height="240" alt="스크린샷 2026-04-15 193442" src="https://github.com/user-attachments/assets/7c6cd383-95ed-4914-9e87-825adf04cca3" />
 
+---
+
+## 5번 문제 소스코드설명
+
+```
+// Title: no.5Practice
+// Date: 2026.04.15
+// Author: 안성일
+```
+- 프로그램 제목, 날짜, 작성자 주석
+
+```
+#include <iostream>
+```
+- 헤더 파일 포함, 입출력 사용
+
+```
+using namespace std;
+```
+- std 네임스페이스 사용 (cout, endl 등을 std:: 없이 사용 가능)
+
+```
+class Container {
+```
+- Container 클래스 정의 시작
+
+```
+int* p;
+```
+- 정수 배열을 가리킬 포인터 변수 선언
+
+```
+int size;
+```
+- 배열의 크기를 저장할 정수형 변수 선언
+
+```
+public:
+```
+- 외부에서 접근 가능하도록 public 선언
+
+```
+Container(int size);
+```
+- 생성자 선언
+
+```
+~Container();
+```
+- 소멸자 선언
+
+```
+void read();
+```
+- 배열에 정수를 입력받는 함수 선언
+
+```
+void write();
+```
+- 배열의 정수를 출력하는 함수 선언
+
+```
+void rotate();
+```
+- 배열을 오른쪽으로 회전하는 함수 선언
+
+```
+double avg();
+```
+- 배열의 평균을 반환하는 함수 선언
+
+```
+Container::Container(int size) {
+```
+- 생성자 정의 시작
+
+```
+this->size = size;
+```
+- 매개변수 size를 멤버변수 size에 저장
+
+```
+p = new int[size];
+```
+- size 크기의 정수형 동적 배열 생성 후 p에 주소 저장
+
+```
+Container::~Container() {
+```
+- 소멸자 정의 시작
+
+```
+delete[] p;
+```
+- 동적으로 할당한 배열 메모리 해제
+
+```
+void Container::read() {
+```
+- read 함수 정의 시작
+
+```
+cout << "정수 " << size << "개 입력>>";
+```
+- 정수 입력을 안내하는 문자열 출력
+
+```
+for (int i = 0; i < size; i++)
+    cin >> p[i];
+```
+- size만큼 반복하며 정수를 입력받아 배열에 저장
+
+```
+void Container::write() {
+```
+- write 함수 정의 시작
+
+```
+for (int i = 0; i < size; i++)
+    cout << p[i] << " ";
+```
+- 배열의 모든 요소를 공백으로 구분하여 출력
+
+```
+cout << endl;
+```
+- 출력 후 줄바꿈
+
+```
+void Container::rotate() {
+```
+- rotate 함수 정의 시작
+
+```
+int last = p[size - 1];
+```
+- 배열의 마지막 요소를 last에 저장
+
+```
+for (int i = size - 1; i > 0; i--)
+    p[i] = p[i - 1];
+```
+- 뒤에서부터 앞 요소를 한 칸씩 오른쪽으로 이동
+
+```
+p[0] = last;
+```
+- 저장해둔 마지막 요소를 배열의 첫 번째 자리에 삽입
+
+```
+double Container::avg() {
+```
+- avg 함수 정의 시작
+
+```
+double sum = 0;
+```
+- 합계를 저장할 변수 sum을 0으로 초기화
+
+```
+for (int i = 0; i < size; i++)
+    sum += p[i];
+```
+- 배열의 모든 요소를 더해 sum에 누적
+
+```
+return sum / size;
+```
+- 합계를 배열 크기로 나눠 평균 반환
+
+```
+int main() {
+```
+- 메인함수 정의 시작
+
+```
+Container c(10);
+```
+- 정수 10개를 저장할 Container 객체 c 생성
+
+```
+c.read();
+```
+- 정수 10개 입력받아 배열에 저장
+
+```
+c.write();
+```
+- 배열의 정수 출력
+
+```
+c.rotate();
+```
+- 배열을 오른쪽으로 한 칸 회전
+
+```
+c.write();
+```
+- 회전된 배열의 정수 출력
+
+```
+cout << "평균은 " << c.avg() << endl;
+```
+- 배열의 평균값 출력
+
+```
+return 0;
+```
+- 0을 반환하고 프로그램 종료
+
+<br>
+
+## 실행결과 
+
+<img width="1729" height="281" alt="스크린샷 2026-04-15 193713" src="https://github.com/user-attachments/assets/f99f0271-c13d-4c62-8a3e-e3b93a386702" />
+
+---
+
+## 11번 문제 소스코드설명
+
 
