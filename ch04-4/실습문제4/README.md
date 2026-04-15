@@ -107,5 +107,81 @@ return 0;
 
 ## 4번 문제 소스코드설명
 
+```
+#include <iostream>
+```
+- 헤더 파일 포함, 입출력 사용
+
+```
+#include <string>
+```
+- 헤더 파일 포함, string 클래스 사용
+
+```
+using namespace std;
+```
+- std 네임스페이스 사용 (cout, endl 등을 std:: 없이 사용 가능)
+
+```
+int main() {
+```
+- 메인함수 정의 시작
+
+```
+string str;
+```
+- 입력받을 문자열을 저장할 string 변수 선언
+
+```
+string result;
+```
+- 결과 문자열을 저장할 string 변수 선언
+
+```
+cout << "텍스트 입력(한글 안 됨)>>";
+```
+- 텍스트 입력을 안내하는 문자열 출력
+
+```
+getline(cin, str);
+```
+- 공백 포함 한 줄을 입력받아 str에 저장
+
+```
+for (int i = 0; i < str.length(); i++) {
+```
+- 문자열 길이만큼 반복하는 for문
+
+```
+char ch = str[i];
+```
+- 현재 인덱스의 문자를 ch에 저장
+
+```
+if (isalpha(ch) || ch == ' ') {
+```
+- ch가 알파벳이거나 공백인지 확인
+
+```
+result += ch;
+```
+- 조건을 만족하면 result에 ch 추가
+
+```
+cout << result << endl;
+```
+- 완성된 결과 문자열 출력
+
+```
+return 0;
+```
+- 0을 반환하고 프로그램 종료
+
+
+<br>
+
+## 실행결과
+
+<img width="1723" height="240" alt="스크린샷 2026-04-15 193442" src="https://github.com/user-attachments/assets/7c6cd383-95ed-4914-9e87-825adf04cca3" />
 
 
