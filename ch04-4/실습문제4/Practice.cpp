@@ -38,24 +38,22 @@ int main() {
 // Author: 안성일
 
 #include <iostream>
-#include <cstring>
+#include <string>
 using namespace std;
 
 int main() {
-    char str[100];
-    char result[100];
-    int idx = 0;
+    string str;
+    string result;
 
     cout << "텍스트 입력(한글 안 됨)>>";
-    cin.getline(str, 100);
+    getline(cin, str);
 
-    for (int i = 0; i < strlen(str); i++) {
+    for (int i = 0; i < str.length(); i++) {
         char ch = str[i];
         if (isalpha(ch) || ch == ' ') {
-            result[idx++] = ch;
+            result += ch;
         }
     }
-    result[idx] = '\0';
 
     cout << result << endl;
     return 0;
