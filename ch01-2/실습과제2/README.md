@@ -26,5 +26,5 @@ return 0;
 
 ## 실행결과
 
-
+<img width="1723" height="215" alt="스크린샷 2026-05-01 004321" src="https://github.com/user-attachments/assets/cda6d4a2-37fc-4ea8-b600-a52b6a446313" />
 
