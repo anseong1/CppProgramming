@@ -5,7 +5,7 @@
 ```
 #include <iostream>
 ```
--
+- 입출력을 위한 헤더파일이며 cout,endl 등을 사용하기 위해 선언
 
 ```
 int main(void)
