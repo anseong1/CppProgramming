@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <string>
-using namespace std;
+using namespace std;   
 
 void SwapString(string* a, string* b);
 
