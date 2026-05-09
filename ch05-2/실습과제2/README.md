@@ -20,12 +20,7 @@ void add2(int &value);
 ```
 int main(void)
 ```
-- 메인함수 시작점
-
-```
-{
-```
-- main 함수 본문 시작
+- 메인함수 시작점    
 
 ```
 int number;
@@ -50,12 +45,7 @@ add2(number);
 ```
 cout << "2만큼 증가한 값 :" << number << endl;
 ```
-- 증가된 number 값을 화면에 출력
-
-```
-return 0;
-```
-- 프로그램 정상 종료
+- 증가된 number 값을 화면에 출력            
 
 ```
 }
