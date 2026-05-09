@@ -20,12 +20,7 @@ void swap(int &a, int &b);
 ```
 int main(void)
 ```
-- 메인함수 시작점
-
-```
-{
-```
-- main 함수 본문 시작
+- 메인함수 시작점            
 
 ```
 int x, y;
